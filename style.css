@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 40px;
+    width: 500px;
+    position: absolute;
+    min-width: 350px;
+    margin: auto;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 35px 0;
+    border-radius: 20px;
+    font-family: cursive;
+
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+
+}
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+input {
+    width: 80%;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-family: cursive;
+}
+.submit-btn{
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: cursive;
+    cursor: pointer;
+}
+button{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: blue;
+}
+.todo-list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.clear-btn {
+    border: none;
+    outline: none;
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 100px;
+    height: 35px;
+    margin-left: 235px;
+    font-family: cursive;
+    cursor: pointer;
+}
+.clear-btn:hover {
+    background: blue;
+}
+.crossed-element{
+    display: block;
+    margin-top: -10px;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -10px;
+}
+.edit-btn{
+    border: none;
+    outline: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("./img/edit.png") center center/contain no-repeat;
+    margin-right: 10px;
+    border: 1.5px solid gray;
+    border-radius: 3px;
+
+}
+.delete-btn{
+    border: none;
+    outline: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("./img/delete.png") center center/contain no-repeat;
+    border: 1.5px solid gray;
+    border-radius: 3px;
+}
