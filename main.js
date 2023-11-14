@@ -23,6 +23,10 @@ function initList(){
 // Input Add
 function addItem(e) {
     e.preventDefault();
+    if (input.value.length >= 15 ){
+        alert('Enter at least 15 characters')
+        return input.value = ''
+    }
     const value = input.value.trim();
     const createdAt = getCurrentTime();
     const id = new Date().getTime().toString()
@@ -41,7 +45,9 @@ function addItem(e) {
     } else if (value && editFlag) {
         editElement.textContent = value;
         defaultSetting()
-    } else {
+    }
+
+    else {
         alert('please inter value')
     }
 }
@@ -85,7 +91,7 @@ function createListItem(id,value, createdAt) {
     taskElement.innerHTML = `
            <span class="title">  
                 <span>${value} </span> 
-               / ${createdAt}
+               /      ${createdAt}
           </span>
                 <div class="btn-container">
                     <input type="checkbox" class="crossed-element"/>
